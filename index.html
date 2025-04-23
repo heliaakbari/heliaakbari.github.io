@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f8f9fa; /* Equivalent to bg-body-tertiary */
+            padding: 0;
+            margin: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* Navbar content */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.25rem;
+        }
+
+        /* Navbar links */
+        .navbar-nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: #000;
+            font-size: 1rem;
+        }
+
+        .nav-link:hover {
+            color: #0056b3; /* Adds hover effect */
+            text-decoration: underline;
+        }
+
+        .activated {
+            font-weight: bold; /* Style for the active link */
+        }
+
+        /* Pure CSS */
+        footer {
+            padding: 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        footer .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0078d7;
+            font-size: 1.2em;
+        }
+
+        footer .links a:hover {
+            color: #0056a3;
+        }
+
+
+        #hero {
+        background: #ECF0F1;
+        padding: 80px 0;
+        overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            flex: 1;
+            color: #2C2C2C;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-content h1:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #2C2C2C;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(24, 27, 11, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #2C3E50;
+            color:#D4AF37 ;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px #877408;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .news-section {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .news-item {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+        }
+
+        .news-date {
+            font-weight: bold;
+            color: #555;
+            width: 20%;
+        }
+        .news-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #222;
+        }
+        .news-description {
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html" title="homepage - Helia Akbari">Helia Akbari</a>
+            <div class="navbar-nav">
+                <a class="nav-link activated" title="homepage - Helia Akbari" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link" href="./index.html" title="About - Helia Akbari">Home</a>
+                <a class="nav-link" href="./projects.html" title="Work projects - Helia Akbari">Projects</a>
+                <a class="nav-link" href="./teaching.html" title="Contact Helia Akbari">Teaching Assistance</a>
+            </div>
+        </div>
+        
+    </nav>
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="./asset/me5.jpg" alt="Featured Shoe">
+            </div>
+            <div class="hero-content">
+                <h1>Helia Akbari</h1>
+                <p>Computer Engineering Bachelor at Amirkabir University</p>
+                <a href="#featured" class="cta-button">Contact me</a>
+                <div class="links">
+                    <a href="https://t.me/helia_bri" target="_blank" title="Contact and message Helia Akbari in Telegram">📨 Telegram</a>
+                    <a href="mailto:www.heliaakbari.edu@gmail.com" target="_blank" title="Contact and send email to Helia Akbari">✉️ Email</a>
+                    <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank" title="See Helia Akbari's resume on LinkedIn">🔗 LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-me">
+        Hi! My name is Lin (she/her). I am a PhD student at the Max Planck Institute for Security and Privacy (MPI-SP) where I am supervised by Asia Biega in the Responsible Computing Group. I am investigating how we can reimagine notice and consent (i.e., consent notices) and move towards sustainable, responsible, and human-centred data collection for users and AI co-generators. 
+I collaborate with researchers across computer science, tech policy, and privacy + labour law for broader societal and regulatory impact. I have presented my work, and have engaged with privacy and AI ethics stakeholders across Europe and North America such as the Future of Privacy Forum, French Data Protection Authority (CNIL), UC Berkeley Center for Long-Term Cybersecurity, and NOYB. My work has also won the Council of Europe's 2024 Rodotà Award for an original and innovative contribution to data protection, and has been featured in an AI Ethics Brief from the Montreal Institute of AI Ethics.
+    </section>
+    <section id="research-interest">
+        <h2>Research interests</h2>
+        <p>ai - computing - frontend -...</p>
+    </section>
+    <section class="news-section">
+        <h2>News</h2>
+        <div class="news-item">
+            <div class="news-date">2024-09</div>
+            <div>
+            <div class="news-title">Examining Mainstream News Media Narratives</div>
+            <div class="news-description">
+                Thrilled to share that our paper "Examining Mainstream News Media Narratives on Youth Online Safety"
+                has been accepted to the CSCW 2024 Poster track! See you all in Costa Rica.
+            </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-date">2024-09</div>
+            <div>
+            <div class="news-title">Examining Mainstream News Media Narratives</div>
+            <div class="news-description">
+                Thrilled to share that our paper "Examining Mainstream News Media Narratives on Youth Online Safety"
+                has been accepted to the CSCW 2024 Poster track! See you all in Costa Rica.
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="name">
+            <h2>Helia Akbari</h2>
+        </div>
+        <div class="links">
+            <h3>Explore</h3>
+            <a href="https://t.me/helia_bri" target="_blank" title="Contact and message Helia Akbari in Telegram">📨 Telegram</a>
+            <a href="mailto:www.heliaakbari.edu@gmail.com" target="_blank" title="Contact and send email to Helia Akbari">✉️ Email</a>
+            <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank" title="See Helia Akbari's resume on LinkedIn">🔗 LinkedIn</a>
+        </div>
+        <div class="open-source">
+            <h3>Social Media</h3>
+            <a href="https://github.com/heliaakbari/portfolio-shecodes" target="_blank" title="This website's code on GitHub">Open-source</a>
+            <p>Code by Helia Akbari</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
