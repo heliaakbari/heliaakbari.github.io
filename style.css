@@ -77,25 +77,33 @@ body {
 }
 /* Pure CSS */
 footer {
-    padding: 20px;
-    background-color: #f8f8f8;
+    box-shadow: 4px -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 80px;
+    background-color: var(--pink);
     text-align: center;
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-
+footer .links {
+    display: flex;
+    flex-direction: column;
+}
+footer h3 {
+    font-size: 20px;
+}
 footer .links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #0078d7;
-    font-size: 1.2em;
+    color: var(--brown-dark);
+    font-size: 20px;
+    padding: 5px;
 }
 
 footer .links a:hover {
-    color: #0056a3;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -218,6 +226,7 @@ overflow: hidden;
     border-radius: 20px 20px 0 0;
     padding: 20px 30px;
     background-color: var(--pink);
+    color: var(--brown-dark);
 }
 
 .description p {
@@ -225,23 +234,28 @@ overflow: hidden;
     padding: 15px 40px 25px;
 }
 
+
 .news-item {
+    padding: 20px 30px;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #e0e0e0;
 }
 
 .news-date {
+    display: block;
+    font-size: 20px;
+    padding-right: 30px;
     font-weight: bold;
-    color: #555;
+    color: var(--brown);
+    width: 100px !important;
 }
 .news-title {
+    margin-bottom: 10px;
+    color: var(--brown-dark);
     font-weight: bold;
-    font-size: 1.2em;
-    margin: 5px 0;
-    color: #222;
+    font-size: 20px;
 }
 .news-description {
-    color: #666;
-    margin-top: 5px;
+    display: block;
+    font-size: 20px;
 }

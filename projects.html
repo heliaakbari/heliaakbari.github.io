@@ -6,115 +6,98 @@
     <title>Projects</title>
     <link rel="stylesheet" href="./style.css">
     <style>
-h1 {
-  margin: 0;
-  font-family: 'Bree Serif', serif;
-  font-size: 36px;
-}
-p {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 1.5;
-}
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  background: #e5e5e5;
-  box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
-}
-.input {
-  position: absolute;
-  opacity: 0;
-}
-.label {
-  width: auto;
-  padding: 20px 30px;
-  background: #e5e5e5;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
-  color: #7f7f7f;
-  transition: background 0.1s, color 0.1s;
-}
-.label:hover {
-  background: #d8d8d8;
-}
-.label:active {
-  background: #ccc;
-}
-.input:focus + .label {
-  z-index: 1;
-}
-.input:checked + .label {
-  background: #fff;
-  color: #000;
-}
 
-.panel {
-  order: 99;
-  display: none;
-  padding: 20px 30px 30px;
-  background: #fff;
-}
+        .tabs {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        background: var(--brown-dark);
+        box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+        border-radius: 20px;
+        }
+        .input {
+        position: absolute;
+        opacity: 0;
+        }
+        .label {
+        color: var(--cream);
+        width: auto;
+        padding: 20px 50px;
+        background: #e5e5e5;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        background: var(--brown-dark);
+        transition: background 0.1s, color 0.1s;
+        }
+        .label:hover {
+        background: #d8d8d8;
+        }
+        .label:active {
+        background: #ccc;
+        }
+        .input:focus + .label {
+        z-index: 1;
+        }
+        .input:checked + .label {
+            background: var(--brown);
+            border-radius: 20px 20px 0 0;
+        color: var(--cream);
+        }
 
-.input:checked + .label + .panel {
-  display: block;
-  width: 100%;
-}
-.projects{
-    display: flex;
-    direction: row;
-}
-.project-card {
+        .panel {
+        order: 99;
+        display: none;
+        padding: 20px 30px 30px;
+        background: var(--brown);
+        border-radius: 0 0 20px 20px;
+        }
+
+        .input:checked + .label + .panel {
+        display: block;
+        width: 100%;
+        }
+
+        .projects{
             display: flex;
-            border: 1px solid #ccc;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        .project-card {
             border-radius: 8px;
-            background-color: #fff;
-            width: 50%;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .project-details {
             flex: 1;
         }
-        .project-details h2 {
-            margin: 0 0 10px;
-        }
-        .project-details p {
-            margin: 8px 0;
-            font-size: 14px;
-            color: #555;
-        }
         .project-image {
-            width: 200px;
-            height: 150px;
+            width: 40%;
             background-color: #ddd;
-            margin-left: 20px;
+            margin: 20px 30px 30px 30px;
             border-radius: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .buttons {
-            margin-top: 15px;
+            margin-bottom: 30px;
+            margin-left: 30px;
         }
         .buttons button {
-            background-color: #007BFF;
-            color: #fff;
+            background-color: var(--pink);
+            color: var(--brown-dark);
             border: none;
             padding: 8px 16px;
             margin-right: 10px;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 20px;
         }
         .buttons button:hover {
-            background-color: #0056b3;
+            background-color: var(--brown-dark);
+            color: var(--pink-light);
         }
-
-
     </style>
 </head>
 <body>
@@ -128,52 +111,51 @@ p {
             </div>
         </div>
     </nav>
-    <section>
-        <h2>My Projects</h2>
-        <p>Cat ipsum dolor sit amet, fat baby cat best buddy little guy stare at wall turn and meow stare at wall some more meow again continue staring . Chew master's slippers. Reward the chosen human with a slow blink. Why must they do that meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat rub butt on table ask for petting for stand with legs in litter box, but poop outside yet eat owner's food who's the baby. Munch on tasty moths hiding behind the couch until lured out by a feathery toy yet burrow under covers eat from dog's food. Bite nose of your human. Chew iPad power cord scamper so iâ€™m so hungry iâ€™m so hungry but ew not for that chase dog then run away. Ignore the human until she needs to get up, then climb on her lap and sprawl kick up litter. Give attitude claws in your leg jump off balcony, onto stranger's head. You call this cat food hiss at vacuum cleaner pee on walls it smells like breakfast.</p>
+    <section class="description">
+        <div class="content" id="about">
+            <h2>My Projects</h2>
+            <p>
+                As a dedicated senior bachelor's student in Computer Engineering, my plan is to pursue a Ph.D.
+                focused on hybrid quantum/classical algorithms. Hard work and persistence in learning has led me
+                to build a solid foundation in computer science particularly algorithms and artificial intelligence.
+                Through elective university courses, self-study, and networking, I have developed a deep interest in
+                quantum computing and aim to expand my knowledge in this field. My goal is to explore applications
+                of quantum computing for optimizing classical algorithms.</p>
+    </div>
     </section>
     <section>
         <div class="tabs">
 
             <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
-            <label class="label" for="tab-1">Arlina Design</label>
+            <label class="label" for="tab-1">Front-End</label>
             <div class="panel">
                 <div class="projects">
-                <div class="project-card">
-                        <div class="project-details">
-                            <h2>Project Title</h2>
-                            <p>Project description: Body text for your whole article or post. Add some placeholder text to simulate a filled-out page.</p>
-                            <p>Tools: Bootstrap, GitHub, React, VSCode</p>
-                            <p>Skills: React, Teamwork, Figma</p>
-                            <div class="buttons">
-                                <button>Demo</button>
-                                <button>Code</button>
+                    <div class="project-card description">
+                        <div class="content">
+                        <h2>Project Title</h2>
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="project-details">
+                                <p>
+                                    <strong>Description:</strong> Course Name <br />
+                                    <strong>Tools:</strong> Supervisor Name <br />
+                                    <strong>Skills:</strong> Responsibility Details
+                                </p>
+                                <div class="buttons">
+                                    <button>Demo</button>
+                                    <button>Code</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-image">
-                            <p>Image</p>
+                            <div class="project-image">
+                                <p>Image</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-details">
-                            <h2>Project Title</h2>
-                            <p>Project description: Body text for your whole article or post. Add some placeholder text to simulate a filled-out page.</p>
-                            <p>Tools: Bootstrap, GitHub, React, VSCode</p>
-                            <p>Skills: React, Teamwork, Figma</p>
-                            <div class="buttons">
-                                <button>Demo</button>
-                                <button>Code</button>
-                            </div>
-                        </div>
-                        <div class="project-image">
-                            <p>Image</p>
-                        </div>
                     </div>
                 </div>
             </div>
 
             <input class="input" name="tabs" type="radio" id="tab-2"/>
-            <label class="label" for="tab-2">Idntheme</label>
+            <label class="label" for="tab-2">Machine Learning</label>
             <div class="panel">
               <h1>Idntheme</h1>
               <p>Idntheme (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a type of, mandarin orange (Citrus reticulata).</p>
@@ -181,7 +163,7 @@ p {
             </div>
 
             <input class="input" name="tabs" type="radio" id="tab-3"/>
-            <label class="label" for="tab-3">Tekno Match</label>
+            <label class="label" for="tab-3">Quantum Computing</label>
             <div class="panel">
               <h1>Tekno Match</h1>
               <p>Tekno Match (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in 1902. The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7 to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
@@ -195,14 +177,17 @@ p {
         </div>
         <div class="links">
             <h3>Explore</h3>
-            <a href="https://t.me/helia_bri" target="_blank" title="Contact and message Helia Akbari in Telegram">📨 Telegram</a>
-            <a href="mailto:www.heliaakbari.edu@gmail.com" target="_blank" title="Contact and send email to Helia Akbari">✉️ Email</a>
-            <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank" title="See Helia Akbari's resume on LinkedIn">🔗 LinkedIn</a>
+            <a href="./index.html#contact">Contact me</a>
+            <a href="./index.html#about">About me</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./teaching.html">Teaching Assistance</a>
+            <a href="./index.html#news">News</a>
         </div>
-        <div class="open-source">
+        <div class="links">
             <h3>Social Media</h3>
-            <a href="https://github.com/heliaakbari/portfolio-shecodes" target="_blank" title="This website's code on GitHub">Open-source</a>
-            <p>Code by Helia Akbari</p>
+            <a href="https://t.me/helia_bri" target="_blank" title="Contact and message Helia Akbari in Telegram">Telegram</a>
+            <a href="mailto:www.heliaakbari.edu@gmail.com" target="_blank" title="Contact and send email to Helia Akbari">Email</a>
+            <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank" title="See Helia Akbari's resume on LinkedIn">LinkedIn</a>
         </div>
     </footer>
     
