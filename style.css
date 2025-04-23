@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Equivalent to bg-body-tertiary */
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+/* Navbar links */
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Adds hover effect */
+    text-decoration: underline;
+}
+
+.activated {
+    font-weight: bold; /* Style for the active link */
+}
+
+/* Pure CSS */
+footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0078d7;
+    font-size: 1.2em;
+}
+
+footer .links a:hover {
+    color: #0056a3;
+}
+
+
+#hero {
+background: #ECF0F1;
+padding: 80px 0;
+overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.hero-content {
+    flex: 1;
+    color: #2C2C2C;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hero-content h1:hover {
+    transform: scale(1.05);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2C2C2C;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(24, 27, 11, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #2C3E50;
+    color:#D4AF37 ;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px #877408;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.news-section {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.news-item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+.news-date {
+    font-weight: bold;
+    color: #555;
+    width: 20%;
+}
+.news-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #222;
+}
+.news-description {
+    color: #666;
+    margin-top: 5px;
+}

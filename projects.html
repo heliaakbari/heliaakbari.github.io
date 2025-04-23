@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+h1 {
+  margin: 0;
+  font-family: 'Bree Serif', serif;
+  font-size: 36px;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  background: #e5e5e5;
+  box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+}
+.input {
+  position: absolute;
+  opacity: 0;
+}
+.label {
+  width: auto;
+  padding: 20px 30px;
+  background: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #7f7f7f;
+  transition: background 0.1s, color 0.1s;
+}
+.label:hover {
+  background: #d8d8d8;
+}
+.label:active {
+  background: #ccc;
+}
+.input:focus + .label {
+  z-index: 1;
+}
+.input:checked + .label {
+  background: #fff;
+  color: #000;
+}
+
+.panel {
+  order: 99;
+  display: none;
+  padding: 20px 30px 30px;
+  background: #fff;
+}
+
+.input:checked + .label + .panel {
+  display: block;
+  width: 100%;
+}
+.projects{
+    display: flex;
+    direction: row;
+}
+.project-card {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            width: 50%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-details {
+            flex: 1;
+        }
+        .project-details h2 {
+            margin: 0 0 10px;
+        }
+        .project-details p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .project-image {
+            width: 200px;
+            height: 150px;
+            background-color: #ddd;
+            margin-left: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        .buttons button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html" title="homepage - Helia Akbari">Helia Akbari</a>
+            <div class="navbar-nav">
+                <a class="nav-link " title="homepage - Helia Akbari" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link activated" href="./projects.html" title="Work projects - Helia Akbari">Projects</a>
+                <a class="nav-link" href="./teaching.html" title="Contact Helia Akbari">Teaching Assistance</a>
+            </div>
+        </div>
+        
+    </nav>
+    <section>
+        <h2>My Projects</h2>
+        <p>Cat ipsum dolor sit amet, fat baby cat best buddy little guy stare at wall turn and meow stare at wall some more meow again continue staring . Chew master's slippers. Reward the chosen human with a slow blink. Why must they do that meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat rub butt on table ask for petting for stand with legs in litter box, but poop outside yet eat owner's food who's the baby. Munch on tasty moths hiding behind the couch until lured out by a feathery toy yet burrow under covers eat from dog's food. Bite nose of your human. Chew iPad power cord scamper so iâ€™m so hungry iâ€™m so hungry but ew not for that chase dog then run away. Ignore the human until she needs to get up, then climb on her lap and sprawl kick up litter. Give attitude claws in your leg jump off balcony, onto stranger's head. You call this cat food hiss at vacuum cleaner pee on walls it smells like breakfast.</p>
+    </section>
+    <section>
+        <div class="tabs">
+
+            <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+            <label class="label" for="tab-1">Arlina Design</label>
+            <div class="panel">
+                <div class="projects">
+                <div class="project-card">
+                        <div class="project-details">
+                            <h2>Project Title</h2>
+                            <p>Project description: Body text for your whole article or post. Add some placeholder text to simulate a filled-out page.</p>
+                            <p>Tools: Bootstrap, GitHub, React, VSCode</p>
+                            <p>Skills: React, Teamwork, Figma</p>
+                            <div class="buttons">
+                                <button>Demo</button>
+                                <button>Code</button>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <p>Image</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-details">
+                            <h2>Project Title</h2>
+                            <p>Project description: Body text for your whole article or post. Add some placeholder text to simulate a filled-out page.</p>
+                            <p>Tools: Bootstrap, GitHub, React, VSCode</p>
+                            <p>Skills: React, Teamwork, Figma</p>
+                            <div class="buttons">
+                                <button>Demo</button>
+                                <button>Code</button>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <p>Image</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input class="input" name="tabs" type="radio" id="tab-2"/>
+            <label class="label" for="tab-2">Idntheme</label>
+            <div class="panel">
+              <h1>Idntheme</h1>
+              <p>Idntheme (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a type of, mandarin orange (Citrus reticulata).</p>
+              <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under the Tanaka classification system, Citrus tangerina is considered a separate species.</p>
+            </div>
+
+            <input class="input" name="tabs" type="radio" id="tab-3"/>
+            <label class="label" for="tab-3">Tekno Match</label>
+            <div class="panel">
+              <h1>Tekno Match</h1>
+              <p>Tekno Match (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in 1902. The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7 to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="name">
+            <h2>Helia Akbari</h2>
+        </div>
+        <div class="links">
+            <h3>Explore</h3>
+            <a href="https://t.me/helia_bri" target="_blank" title="Contact and message Helia Akbari in Telegram">📨 Telegram</a>
+            <a href="mailto:www.heliaakbari.edu@gmail.com" target="_blank" title="Contact and send email to Helia Akbari">✉️ Email</a>
+            <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank" title="See Helia Akbari's resume on LinkedIn">🔗 LinkedIn</a>
+        </div>
+        <div class="open-source">
+            <h3>Social Media</h3>
+            <a href="https://github.com/heliaakbari/portfolio-shecodes" target="_blank" title="This website's code on GitHub">Open-source</a>
+            <p>Code by Helia Akbari</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
