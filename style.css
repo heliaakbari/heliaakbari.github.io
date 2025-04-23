@@ -3,55 +3,78 @@ body {
     font-family: Arial, sans-serif;
 }
 
+:root {
+    --cream: #FFFEF8; /* Pink (like strawberry ice cream) */
+    --pink: #EFADB9; /* A richer pink */
+    --brown: #774B4C; /* Peach (like peach sorbet) */
+    --white: #FBFFFE; /* Brown (like chocolate or cone) */
+    --brown-dark: #3b2324;
+    --pink-light: #f9e0e4;
+    background-color: var(--cream);
+}
+
 /* Navbar container */
 .navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Equivalent to bg-body-tertiary */
-    padding: 0;
-    margin: 0;
+    background-color: var(--pink); /* Equivalent to bg-body-tertiary */
+    margin: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    align-items: center;
 }
 
-.navbar a {
+.nav-link  a {
     text-decoration: none;
     color: #000;
 }
 
 /* Navbar content */
-.container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 10px 5%;
 }
 
 .navbar-brand {
-    font-size: 1.25rem;
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--brown-dark)
 }
 
+.navbar-brand:hover{
+    font-weight: 900;
+}
 /* Navbar links */
 .navbar-nav {
     display: flex;
     gap: 1rem;
+    
 }
 
 .nav-link {
-    color: #000;
-    font-size: 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--brown-dark);
+    padding: 0 15px;
 }
 
 .nav-link:hover {
-    color: #0056b3; /* Adds hover effect */
     text-decoration: underline;
 }
 
 .activated {
     font-weight: bold; /* Style for the active link */
+    
 }
 
+.activated:hover{
+    text-decoration: initial;
+    cursor:initial;
+}
 /* Pure CSS */
 footer {
     padding: 20px;
@@ -62,6 +85,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 footer .links a {
     margin: 0 10px;
@@ -76,13 +100,13 @@ footer .links a:hover {
 
 
 #hero {
-background: #ECF0F1;
+background: var(--cream);
 padding: 80px 0;
 overflow: hidden;
 }
 
 .hero-container {
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -92,13 +116,21 @@ overflow: hidden;
 
 .hero-content {
     flex: 1;
-    color: #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     animation: fadeIn 1.5s ease-in-out;
 }
-
+.hero-content > * {
+    width: 100%;
+    text-align: center;
+}
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    margin: 0;
+    color: var(--brown-dark);
+    font-weight: 900;
+    font-size: 80px;
     transition: transform 0.3s ease;
 }
 
@@ -107,28 +139,51 @@ overflow: hidden;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 25px;
+    color: var(--brown);
     margin-bottom: 30px;
     opacity: 0.8;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #2C2C2C;
-    color: white;
+.cta:not(svg){
+    padding-top: 30px;
+    display: block;
+    color: var(--brown-dark);
     text-decoration: none;
-    border-radius: 50px;
     font-weight: bold;
+    font-size: 30px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(24, 27, 11, 0.3);
 }
 
-.cta-button:hover {
-    background-color: #2C3E50;
-    color:#D4AF37 ;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px #877408;
+.contactme {
+    background-color: var(--pink);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.contactme:hover {
+    transform: scale(1.05);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.contacts a {
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.contacts a:hover {
+    margin-top: 30px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .hero-image {
@@ -150,6 +205,24 @@ overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
+
+.description .content {
+    border-radius: 20px;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--pink-light);
+}
+
+.description h2 {
+    border-radius: 20px 20px 0 0;
+    padding: 20px 30px;
+    background-color: var(--pink);
+}
+
+.description p {
+    padding: 0 30px;
+}
 .news-section {
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
