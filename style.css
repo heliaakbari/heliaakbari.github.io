@@ -209,8 +209,8 @@ overflow: hidden;
 .description .content {
     border-radius: 20px;
     padding: 0;
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 40px auto;
     background-color: var(--pink-light);
 }
 
@@ -221,24 +221,19 @@ overflow: hidden;
 }
 
 .description p {
-    padding: 0 30px;
+    font-size: 20px;
+    padding: 15px 40px 25px;
 }
-.news-section {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+
 .news-item {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
 }
 
 .news-date {
     font-weight: bold;
     color: #555;
-    width: 20%;
 }
 .news-title {
     font-weight: bold;
