@@ -148,7 +148,7 @@ overflow: hidden;
 
 .hero-content p {
     font-size: 25px;
-    color: var(--brown);
+    color: black;
     margin-bottom: 30px;
     opacity: 0.8;
 }
