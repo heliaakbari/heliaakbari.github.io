@@ -103,30 +103,34 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a class="navbar-brand" href="./index.html" title="homepage - Helia Akbari">Helia Akbari</a>
-            <div class="navbar-nav">
-                <a class="nav-link" title="homepage - Helia Akbari" aria-current="page" href="./index.html">Home</a>
-                <a class="nav-link activated" href="./projects.html" title="Work projects - Helia Akbari">Projects</a>
-                <a class="nav-link" href="./teaching.html" title="Contact Helia Akbari">Teaching Assistance</a>
-            </div>
-        </div>
-    </nav>
-    <section class="description">
-        <div class="content" id="about">
-            <h2>My Projects</h2>
-            <p>
-                As a dedicated senior bachelor's student in Computer Engineering, my plan is to pursue a Ph.D.
-                focused on hybrid quantum/classical algorithms. Hard work and persistence in learning has led me
-                to build a solid foundation in computer science particularly algorithms and artificial intelligence.
-                Through elective university courses, self-study, and networking, I have developed a deep interest in
-                quantum computing and aim to expand my knowledge in this field. My goal is to explore applications
-                of quantum computing for optimizing classical algorithms.</p>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a class="navbar-brand" href="./index.html" title="homepage - Helia Akbari">Helia Akbari</a>
+      <div class="navbar-nav">
+        <a class="nav-link" title="homepage - Helia Akbari" href="./index.html">Home</a>
+        <a class="nav-link activated" href="./projects.html" aria-current="page">Projects</a>
+        <a class="nav-link" href="./teaching.html" title="Contact Helia Akbari">Teaching Assistance</a>
+      </div>
     </div>
+  </nav>
+
+  <main aria-label="Main content">
+    <section class="description" aria-labelledby="projects-heading">
+      <div class="content" id="about">
+        <h1 id="projects-heading">My Projects</h1>
+        <p>
+          As a dedicated senior bachelor's student in Computer Engineering, my plan is to pursue a Ph.D.
+          focused on hybrid quantum/classical algorithms. Hard work and persistence in learning has led me
+          to build a solid foundation in computer science particularly algorithms and artificial intelligence.
+          Through elective university courses, self-study, and networking, I have developed a deep interest in
+          quantum computing and aim to expand my knowledge in this field. My goal is to explore applications
+          of quantum computing for optimizing classical algorithms.
+        </p>
+      </div>
     </section>
-    <section>
-        <div class="tabs">
+
+    <section aria-label="Project Categories">
+<div class="tabs">
 
             <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
             <label class="label" for="tab-1">Front-End</label>
@@ -148,7 +152,7 @@
                                 </div>
                             </div>
                             <div class="project-image">
-                                <img src="./asset/images.jpg" alt="">
+                                <img src="./asset/images.jpg" alt="Screenshot of project code">
                             </div>
                         </div>
                     </div>
@@ -172,26 +176,26 @@
             </div>
           </div>
     </section>
+  </main>
 
-    <footer>
-        <div class="name">
-            <h2>Helia Akbari</h2>
-        </div>
-        <div class="links">
-            <h3>Explore</h3>
-            <a href="./index.html#contact">Contact me</a>
-            <a href="./index.html#about">About me</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./teaching.html">Teaching Assistance</a>
-            <a href="./index.html#news">News</a>
-        </div>
-        <div class="links">
-            <h3>Social Media</h3>
-            <a href="https://t.me/helia_bri" target="_blank" title="Contact and message Helia Akbari in Telegram">Telegram</a>
-            <a href="mailto:www.heliaakbari.edu@gmail.com" target="_blank" title="Contact and send email to Helia Akbari">Email</a>
-            <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank" title="See Helia Akbari's resume on LinkedIn">LinkedIn</a>
-        </div>
-    </footer>
-    
+  <footer aria-label="Footer">
+    <div class="name">
+      <h2>Helia Akbari</h2>
+    </div>
+    <div class="links">
+      <h3>Explore</h3>
+      <a href="./index.html#contact">Contact me</a>
+      <a href="./index.html#about">About me</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./teaching.html">Teaching Assistance</a>
+      <a href="./index.html#news">News</a>
+    </div>
+    <div class="links">
+      <h3>Social Media</h3>
+      <a href="https://t.me/helia_bri" target="_blank">Telegram</a>
+      <a href="mailto:heliaakbari.edu@gmail.com" target="_blank">Email</a>
+      <a href="https://www.linkedin.com/in/helia-akbari-5aa641225/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
 </body>
 </html>
